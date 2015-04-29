@@ -12,7 +12,8 @@ defined('_JEXEC') or die;
 // Note. It is important to remove spaces between elements.
 ?>
 <?php // The menu class is deprecated. Use nav instead. ?>
-<nav role="navigation" class="menu<?php echo $class_sfx;?>"<?php
+<nav role="navigation" class="menu<?php echo $class_sfx;?>"
+<?php
 	$tag = '';
 
 	if ($params->get('tag_id') != null)
@@ -21,12 +22,17 @@ defined('_JEXEC') or die;
 		echo ' id="' . $tag . '"';
 	}
 ?>>
+<?php
+if ($module->showtitle) {
+  echo '<h4>' . $module->title . '</h4>';
+}
+?>
 <button class="hamburger">Menu</button>
 <ul class="menu-items">
 <?php
 foreach ($list as $i => &$item)
 {
-	$class = 'item-' . $item->id;
+    $class = 'item-' . $item->id;
 
 	if (($item->id == $active_id) OR ($item->type == 'alias' AND $item->params->get('aliasoptions') == $active_id))
 	{
@@ -103,5 +109,6 @@ foreach ($list as $i => &$item)
 		// The next item is on the same level.
 		echo '</a>';
 	}
+  
 }
 ?></ul></nav>
