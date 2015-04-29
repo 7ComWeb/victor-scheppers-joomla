@@ -23,6 +23,10 @@
         <aside class="left">
             <jdoc:include type="modules" name="left" />
         </aside>
+      
+        <aside class="right">
+            <jdoc:include type="modules" name="right" />
+        </aside>
 
         <main class="clearfix">
             <jdoc:include type="modules" name="before" />
@@ -30,9 +34,6 @@
             <jdoc:include type="modules" name="after" />
         </main>
 
-        <aside class="right">
-            <jdoc:include type="modules" name="right" />
-        </aside>
     </div>
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script>
