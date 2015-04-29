@@ -17,10 +17,7 @@
         <header role="banner">
             <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/banner.png" alt="Honor Deo, labor mihi, utilitas proximo" class="banner-image">
             <h1>Broeders van O.L.V. van Barmhartigheid</h1>
-            <nav role="navigation" class="top-nav">
-                <button class="hamburger">Menu</button>
-                <jdoc:include type="modules" name="top-menu" />
-            </nav>
+            <jdoc:include type="modules" name="top-menu" />
         </header>
 
         <aside class="left">

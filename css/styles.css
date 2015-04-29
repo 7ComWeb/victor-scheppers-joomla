@@ -133,14 +133,14 @@ header nav
 }
 /* Top Navigation Bar */
 
-.top-nav
+.menu-top
 {
     width: 100%;
     width:    -moz-max-content;
     width: -webkit-max-content;
     padding: 0;
 }
-.top-nav ul
+.menu-top ul
 {
     margin: 0;
 
@@ -150,7 +150,7 @@ header nav
     background-color: #fffef0;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
 }
-.top-nav a
+.menu-top a
 {
     display: inline-block;
 
@@ -159,7 +159,7 @@ header nav
 
     border-left: #1a73b5 .75rem solid;
 }
-.top-nav a:first-child
+.menu-top a:first-child
 {
     margin-left: 0;
 
@@ -377,7 +377,7 @@ nav a:active
     {
         margin-top: 3.25rem;
     }
-    .top-nav
+    .menu-top
     {
         position: fixed;
         top: 0;
@@ -385,13 +385,13 @@ nav a:active
 
         width: 100%;
     }
-    .top-nav a
+    .menu-top a
     {
         display: block;
 
         border-bottom: #1a73b5 1px dotted;
     }
-    .top-nav .hamburger
+    .menu-top .hamburger
     {
         width: 100%;
         padding-right: 1.625rem;
@@ -403,8 +403,8 @@ nav a:active
         background-color: #fffef0;
         box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
     }
-    .top-nav .hamburger:active,
-    .top-nav .hamburger:focus
+    .menu-top .hamburger:active,
+    .menu-top .hamburger:focus
     {
         -webkit-transition: opacity .5s ease;
            -moz-transition: opacity .5s ease;
@@ -413,7 +413,7 @@ nav a:active
 
         opacity: 1;
     }
-    .top-nav .menu-items
+    .menu-top .menu-items
     {
         display: block;
         float: right;
