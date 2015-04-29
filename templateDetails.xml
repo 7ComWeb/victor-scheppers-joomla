@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="template">
+	<name>victor</name>
+	<creationDate>2015-01-01</creationDate>
+	<author>Lars De Richter</author>
+	<authorEmail>lars.derichter@commercieelwebverkeer.be</authorEmail>
+	<authorUrl>http://www.commercieelwebverkeer.be/</authorUrl>
+	<copyright>Scheppersinstituut Antwerpen 2015</copyright>
+	<license>MIT</license>
+	<version>1.0</version>
+	<description>Custom template for http://www.victor-scheppers.org/</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+	</files>
+	<positions>
+		<position>top-menu</position>
+		<position>left</position>
+		<position>right</position>
+		<position>before</position>
+		<position>after</position>
+	</positions>
+</extension>

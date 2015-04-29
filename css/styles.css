@@ -1,0 +1,465 @@
+/**
+ *    1. Base Rules
+ */
+
+html
+{
+    font-size: 100%;
+}
+body
+{
+    font-family: Merriweather, Garamond, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    line-height: 1.625rem;
+
+    color: #1d1e1f;
+    background-color: #fffde0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    margin: 0;
+}
+h1
+{
+    font-size: 2.25rem;
+    font-weight: bold;
+    line-height: 3.25rem;
+}
+h2
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+h3
+{
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.625rem;
+}
+h4
+{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+h5
+{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.625rem;
+}
+h6
+{
+    font-size: .75rem;
+    font-weight: 300;
+    line-height: 1.625rem;
+}
+a
+{
+    -webkit-transition: color .5s ease, text-shadow .5s ease;
+       -moz-transition: color .5s ease, text-shadow .5s ease;
+         -o-transition: color .5s ease, text-shadow .5s ease;
+            transition: color .5s ease, text-shadow .5s ease;
+    text-decoration: none;
+
+    color: #0763aa;
+}
+p,
+ul,
+ol,
+dl,
+pre,
+table,
+blockquote
+{
+    margin: 0 0 1.625rem 0;
+}
+ul,
+ol,
+dl
+{
+    padding: 0;
+}
+button,
+button:active,
+button:focus
+{
+    padding: 0;
+
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+nav li
+{
+    display: inline;
+
+    list-style-type: none;
+}
+/**
+ *    2. Modules
+ */
+/* Wrapper */
+
+.wrapper
+{
+    position: relative;
+
+    width: 66.5rem;
+    margin: 1.625rem auto;
+
+    background-image: url('../images/seamless_paper_texture.png');
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+}
+/* Header */
+
+header h1,
+header nav
+{
+    margin: 0 1.625rem;
+}
+.banner-image
+{
+    width: 100%;
+    margin-right: -1px;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+}
+/* Top Navigation Bar */
+
+.top-nav
+{
+    width: 100%;
+    width:    -moz-max-content;
+    width: -webkit-max-content;
+    padding: 0;
+}
+.top-nav ul
+{
+    margin: 0;
+
+    border-top: #1a73b5 1px dotted;
+    border-right: #1a73b5 1px dotted;
+    border-bottom: #1a73b5 1px dotted;
+    background-color: #fffef0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+}
+.top-nav a
+{
+    display: inline-block;
+
+    margin-left: -.25rem;
+    padding: 0 1.625rem;
+
+    border-left: #1a73b5 .75rem solid;
+}
+.top-nav a:first-child
+{
+    margin-left: 0;
+
+    border-left: none;
+}
+/* Main */
+
+main
+{
+    width: 36rem;
+    margin: 1.625rem 1.625rem 1.625rem 15.25rem;
+    padding-bottom: 1.625rem;
+}
+/* Sidebars */
+
+aside
+{
+    width: 12rem;
+    margin: 1.625rem;
+}
+/* Side Navigation */
+
+.side-nav
+{
+    font-size: .75rem;
+
+    background-color: #fffef0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+}
+.side-nav h4
+{
+    color: #fffef0;
+    border: none;
+    background-color: #0763aa;
+    background-image: none;
+}
+.side-nav h4,
+.side-nav li
+{
+    padding: 0 1.625rem;
+}
+.side-nav a
+{
+    display: block;
+
+    border-right: #1a73b5 1px dotted;
+    border-bottom: #1a73b5 1px dotted;
+}
+
+/* Figure */
+figure
+{
+    position: relative;
+
+    max-width: 33%;
+    margin: 0;
+
+    background-color: #fffef0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+}
+
+figure img
+{
+    display: block;
+
+    max-width: 88%;
+    margin: 1rem auto;
+}
+figcaption
+{
+    font-size: .75rem;
+
+    max-width: 88%;
+    margin: 1rem auto;
+}
+
+/**
+ *     3. States
+ */
+
+.current,
+.current:hover,
+.current:active
+{
+    color: #fffef0;
+    border: none !important;
+    background-color: #0763aa;
+    box-shadow: none;
+    text-shadow: none;
+}
+a:hover,
+a:active
+{
+    color: #1a73b5;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+}
+nav a:hover,
+nav a:active
+{
+    -webkit-transition: box-shadow .5s ease;
+       -moz-transition: box-shadow .5s ease;
+         -o-transition: box-shadow .5s ease;
+            transition: box-shadow .5s ease;
+
+    box-shadow: 0 3px 16px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+    text-shadow: none;
+}
+/**
+ *     4. Helpers
+ */
+
+.left
+{
+    float: left;
+
+    margin-right: 1rem;
+}
+.right
+{
+    float: right;
+
+    margin-left: 1rem;
+}
+.block
+{
+    display: block;
+}
+/* clearfix http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after
+{
+    display: table; /* 2 */
+
+    content: ' '; /* 1 */
+}
+
+.clearfix:after
+{
+    clear: both;
+}
+/**
+ *    5. Media Queries
+ */
+
+@media (min-width: 1256px)
+{
+    html
+    {
+        /* 18px */
+        font-size: 112.5%;
+    }
+}
+@media (max-width: 1255px) and (min-width: 1116px)
+{
+    html
+    {
+        /* 16px */
+        font-size: 100%;
+    }
+}
+@media (max-width: 1115px) and (min-width: 1047px)
+{
+    html
+    {
+        /* 15px */
+        font-size: 93.75%;
+    }
+}
+@media (max-width: 1046px) and (min-width: 977px)
+{
+    html
+    {
+        /* 14px */
+        font-size: 87.5%;
+    }
+}
+@media (max-width: 976px)
+{
+    html
+    {
+        /* 13px */
+        font-size: 81.25%;
+    }
+}
+@media (max-width: 906px) and (min-width: 750px)
+{
+    .wrapper
+    {
+        width: 62.5rem;
+    }
+    main
+    {
+        width: 34rem;
+        margin-left: 14.25rem;
+    }
+    aside
+    {
+        width: 11rem;
+    }
+}
+@media (min-width: 855px)
+{
+    /* No hamburgers here */
+
+    .hamburger
+    {
+        display: none !important;
+    }
+}
+@media (max-width: 854px)
+{
+    /* Hamburger Time */
+
+    .wrapper
+    {
+        margin-top: 3.25rem;
+    }
+    .top-nav
+    {
+        position: fixed;
+        top: 0;
+        right: -1.625rem;
+
+        width: 100%;
+    }
+    .top-nav a
+    {
+        display: block;
+
+        border-bottom: #1a73b5 1px dotted;
+    }
+    .top-nav .hamburger
+    {
+        width: 100%;
+        padding-right: 1.625rem;
+
+        text-align: right;
+
+        opacity: .67;
+        border-bottom: #1a73b5 1px dotted;
+        background-color: #fffef0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    }
+    .top-nav .hamburger:active,
+    .top-nav .hamburger:focus
+    {
+        -webkit-transition: opacity .5s ease;
+           -moz-transition: opacity .5s ease;
+             -o-transition: opacity .5s ease;
+                transition: opacity .5s ease;
+
+        opacity: 1;
+    }
+    .top-nav .menu-items
+    {
+        display: block;
+        float: right;
+        clear: both;
+
+        width: fit-content;
+    }
+}
+@media (max-width: 854px) and (min-width: 750px)
+{
+    .wrapper
+    {
+        width: 54.5rem;
+    }
+    main
+    {
+        width: 30rem;
+        margin-left: 12.25rem;
+    }
+    aside
+    {
+        width: 11rem;
+    }
+}
+@media (max-width: 749px)
+{
+    .wrapper
+    {
+        width: 95%;
+    }
+    main,
+    aside
+    {
+        position: static;
+
+        width: 95%;
+        margin: 1.625rem auto;
+    }
+    .left,
+    .right
+    {
+        float: none;
+    }
+    figure
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+}
