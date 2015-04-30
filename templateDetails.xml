@@ -16,6 +16,7 @@
 		<folder>css</folder>
 	</files>
 	<positions>
+      	<position>language-switcher</position>
 		<position>top-menu</position>
 		<position>left</position>
 		<position>right</position>
