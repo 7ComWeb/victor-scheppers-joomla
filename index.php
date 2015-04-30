@@ -1,15 +1,15 @@
 <?php defined( '_JEXEC' ) or die( 'Restricted access' );?>
-
+<?php 
+$config = JFactory::getConfig();
+?>
 <!doctype html>
 <html lang="<?php echo $this->language; ?>">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <jdoc:include type="head" />
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700,400italic,700italic' rel='stylesheet'>
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/styles.css">
-    <title>De Broeders van O.L.V. van Scheppers</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
         <header role="banner">
             <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/banner.png" alt="Honor Deo, labor mihi, utilitas proximo" class="banner-image">
             <jdoc:include type="modules" name="language-switcher" />
-            <h1>Broeders van O.L.V. van Barmhartigheid</h1>
+            <h1><?php echo $config->get('sitename') ?></h1>
             <jdoc:include type="modules" name="top-menu" />
         </header>
 
