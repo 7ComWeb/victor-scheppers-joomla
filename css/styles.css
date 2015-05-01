@@ -138,6 +138,12 @@ header nav
   float: right;
   height: 1.625rem;
 }
+.lang-inline {
+    list-style-type: none;
+}
+.lang-inline li {
+    display: inline-block;
+}
 /* Top Navigation Bar */
 
 .menu-top
