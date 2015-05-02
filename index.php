@@ -2,6 +2,7 @@
 <?php 
 $config = JFactory::getConfig();
 ?>
+
 <!doctype html>
 <html lang="<?php echo $this->language; ?>">
 <head>
@@ -28,11 +29,7 @@ $config = JFactory::getConfig();
             <jdoc:include type="modules" name="right" />
         </aside>
 
-        <main class="clearfix">
-            <jdoc:include type="modules" name="before" />
-            <jdoc:include type="component" />
-            <jdoc:include type="modules" name="after" />
-        </main>
+        <jdoc:include type="component" />
 
     </div>
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>

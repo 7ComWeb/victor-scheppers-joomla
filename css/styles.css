@@ -222,31 +222,37 @@ aside
     border-bottom: #1a73b5 1px dotted;
 }
 
-/* Figure */
+/* Article images */
 figure
 {
     position: relative;
-
-    max-width: 33%;
-    margin: 0;
+    width: 11.1875rem;
+    margin: 0.625rem 0 1.625rem 0;
 
     background-color: #fffef0;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
 }
-
+figure:nth-of-type(2n+1){
+    float: left;
+    margin-right: 1.625rem;
+}
+figure:nth-of-type(2n){
+    float:right;
+    margin-left: 1.625rem
+}
 figure img
 {
     display: block;
 
-    max-width: 88%;
-    margin: 1rem auto;
+    margin: 1.625rem;
+    width: 7.9375rem;
 }
 figcaption
 {
     font-size: .75rem;
-
-    max-width: 88%;
-    margin: 1rem auto;
+    line-height: 1.21875rem;
+    margin: 0 1.625rem 1.21875rem 1.625rem;
+    width: 8.75rem;
 }
 
 /**
@@ -288,13 +294,13 @@ nav a:active
 {
     float: left;
 
-    margin-right: 1rem;
+    margin-right: 1.625rem;
 }
 .right
 {
     float: right;
 
-    margin-left: 1rem;
+    margin-left: 1.625rem;
 }
 .block
 {
