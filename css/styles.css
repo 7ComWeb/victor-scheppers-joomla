@@ -137,6 +137,7 @@ header nav
 .mod-languages {
   float: right;
   height: 1.625rem;
+  margin-right: 1.625rem;
 }
 .lang-inline {
     list-style-type: none;
@@ -148,6 +149,7 @@ header nav
 
 .menu-top
 {
+
     width: 100%;
     width:    -moz-max-content;
     width: -webkit-max-content;
