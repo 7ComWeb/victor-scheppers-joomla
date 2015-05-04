@@ -40,4 +40,15 @@ JHtml::_('behavior.caption');
 			<?php echo $this->loadTemplate('links'); ?>
 		</article>
 	<?php endif; ?>
+  
+  <?php if (($this->params->def('show_pagination', 1) == 1  || ($this->params->get('show_pagination') == 2)) && ($this->pagination->pagesTotal > 1)) : ?>
+	<nav class="pagination">
+	<?php if ($this->params->def('show_pagination_results', 1)) : ?>
+		<p class="counter">
+		<?php echo $this->pagination->getPagesCounter(); ?>
+		</p>
+	<?php endif; ?>
+	<?php echo $this->pagination->getPagesLinks(); ?>
+	</nav>
+<?php endif; ?>
 </main>
