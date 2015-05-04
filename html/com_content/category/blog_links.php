@@ -10,8 +10,8 @@
 defined('_JEXEC') or die;
 ?>
 
-
-<ol class="nav nav-tabs nav-stacked">
+<h2><?php echo JText::_('COM_CONTENT_MORE_ARTICLES'); ?></h2>
+<ol>
 <?php
 	foreach ($this->link_items as &$item) :
 ?>
