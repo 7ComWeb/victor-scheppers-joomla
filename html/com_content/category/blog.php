@@ -13,7 +13,7 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 
 JHtml::_('behavior.caption');
 ?>
-<main class="blog<?php echo $this->pageclass_sfx; ?>">
+<main class="blog<?php echo $this->pageclass_sfx; ?> clearfix">
     <?php if (empty($this->lead_items) && empty($this->link_items) && empty($this->intro_items)) : ?>
 		<?php if ($this->params->get('show_no_articles', 1)) : ?>
 			<p><?php echo JText::_('COM_CONTENT_NO_ARTICLES'); ?></p>
