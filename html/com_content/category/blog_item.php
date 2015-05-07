@@ -15,6 +15,15 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
 $canEdit = $this->item->params->get('access-edit');
 $info    = $params->get('info_block_position', 0);
 ?>
+
+<!--
+this->item
+----------
+
+<?php var_dump($this->item); ?>
+
+-->
+
 <?php if ($this->item->state == 0 || strtotime($this->item->publish_up) > strtotime(JFactory::getDate())
 	|| ((strtotime($this->item->publish_down) < strtotime(JFactory::getDate())) && $this->item->publish_down != JFactory::getDbo()->getNullDate())) : ?>
 	<div class="system-unpublished">
