@@ -19,12 +19,11 @@ JHtml::_('behavior.caption');
 			<p><?php echo JText::_('COM_CONTENT_NO_ARTICLES'); ?></p>
 		<?php endif; ?>
     <?php endif; ?>
-  
-    <?php $leadingcount = 0; ?>
+
+  <?php $leadingcount = 0; ?>
 	<?php if (!empty($this->lead_items)) : ?>
-		<div class="items-leading clearfix">
 			<?php foreach ($this->lead_items as &$item) : ?>
-				<article class="leading-<?php echo $leadingcount; ?><?php echo $item->state == 0 ? ' system-unpublished' : null; ?>">
+				<article class="blog-post">
 					<?php
 					$this->item = & $item;
 					echo $this->loadTemplate('item');
@@ -32,15 +31,14 @@ JHtml::_('behavior.caption');
 				</article>
 				<?php $leadingcount++; ?>
 			<?php endforeach; ?>
-		</div><!-- end items-leading -->
 	<?php endif; ?>
-  
+
 	<?php if (!empty($this->link_items)) : ?>
 		<article class="items-more">
 			<?php echo $this->loadTemplate('links'); ?>
 		</article>
 	<?php endif; ?>
-  
+
   <?php if (($this->params->def('show_pagination', 1) == 1  || ($this->params->get('show_pagination') == 2)) && ($this->pagination->pagesTotal > 1)) : ?>
 	<nav class="pagination">
 	<?php if ($this->params->def('show_pagination_results', 1)) : ?>
