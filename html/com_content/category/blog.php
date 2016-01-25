@@ -23,7 +23,7 @@ JHtml::_('behavior.caption');
   <?php $leadingcount = 0; ?>
 	<?php if (!empty($this->lead_items)) : ?>
 			<?php foreach ($this->lead_items as &$item) : ?>
-				<article class="blog-post">
+				<article class="blog-post clearfix">
 					<?php
 					$this->item = & $item;
 					echo $this->loadTemplate('item');
