@@ -22,7 +22,7 @@ JHtml::_('behavior.caption');
 ?>
 <main class="blog<?php echo $this->pageclass_sfx; ?> clearfix" itemscope itemtype="http://schema.org/Article">
 
-	<article class="blog-post<?php echo $this->pageclass_sfx; ?>">
+	<article class="blog-post<?php echo $this->pageclass_sfx; ?> clearfix">
 	<meta itemprop="inLanguage" content="<?php echo ($this->item->language === '*') ? JFactory::getConfig()->get('language') : $this->item->language; ?>" />
 	<?php if ($this->params->get('show_page_heading')) : ?>
 	<div class="page-header">
@@ -163,6 +163,6 @@ JHtml::_('behavior.caption');
 	?>
 	<?php endif; ?>
 	<?php echo $this->item->event->afterDisplayContent; ?>
-
+	<div class="clearfix"></div>
 </article>
 </main>

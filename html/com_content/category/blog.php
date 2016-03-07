@@ -28,6 +28,7 @@ JHtml::_('behavior.caption');
 					$this->item = & $item;
 					echo $this->loadTemplate('item');
 					?>
+          <div class="clearfix"></div>
 				</article>
 				<?php $leadingcount++; ?>
 			<?php endforeach; ?>
