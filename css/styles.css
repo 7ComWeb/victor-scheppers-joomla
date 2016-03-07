@@ -204,6 +204,7 @@ main
     width: 36rem;
     margin: 1.625rem 1.625rem 1.625rem 15.25rem;
     padding-bottom: 1.625rem;
+    min-height: 32rem;
 }
 
 /* Sidebars */
@@ -212,6 +213,9 @@ aside
 {
     width: 12rem;
     margin: 1.625rem;
+}
+aside.left {
+  position: absolute;
 }
 
 /* Side Navigation */
@@ -312,7 +316,7 @@ figcaption
 .gallerij a.dia figure img, a.dia + a.dia figure img {
   width: 11.75rem;
 }
-.gallerj a.dia:nth-child(odd) {
+.gallerij a.dia:nth-child(odd) figure{
   clear: left;
 }
 /* pagination */
