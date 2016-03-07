@@ -303,6 +303,17 @@ figcaption
     margin: 0 1.625rem 1.21875rem 1.625rem;
 }
 
+.gallerij a.dia figure, a.dia + a.dia figure {
+  display: inline-block;
+  float: left;
+  width: 15rem;
+}
+.gallerij a.dia figure img, a.dia + a.dia figure img {
+  width: 11.75rem;
+}
+.gallerj a.dia:nth-child(odd) {
+  clear: left;
+}
 /* pagination */
 
 .pagination
