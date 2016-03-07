@@ -250,6 +250,8 @@ aside
 
 .blog-post
 {
+    position: absolute;
+    width: 34rem;
     padding: 1rem;
 
     background-color: #f7e82e;
@@ -559,5 +561,10 @@ a:active
     {
         width: 100%;
         max-width: 100%;
+        padding: 0.5rem;
+    }
+    figure img {
+      width: 100%;
+      max-width: 100%;
     }
 }
