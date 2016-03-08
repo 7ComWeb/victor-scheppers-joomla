@@ -171,9 +171,12 @@ header nav
 
 .menu-top
 {
-    width: 100%;
+    display: inline-block;
     width:    -moz-max-content;
     width: -webkit-max-content;
+    width: -o-max-content
+    width: -ms-max-content
+    width: max-content;
     padding: 0;
 }
 .menu-top ul
@@ -201,6 +204,8 @@ header nav
 
 main
 {
+    display: block;
+
     width: 36rem;
     margin: 1.625rem 1.625rem 1.625rem 15.25rem;
     padding-bottom: 1.625rem;
@@ -216,6 +221,10 @@ aside
 }
 aside.left {
   position: absolute;
+}
+aside.right {
+  position: absolute;
+  right: 0px;
 }
 
 /* Side Navigation */
@@ -256,6 +265,7 @@ aside.left {
 {
     width: 34rem;
     padding: 1rem;
+    left: 13.625rem;
 
     background-color: #f7e82e;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
@@ -344,7 +354,7 @@ figcaption
 {
     color: #fffef0;
     border: none !important;
-    background-color: #0763aa;
+    background-color: #2380c5;
     box-shadow: none;
     text-shadow: none;
 }
@@ -366,6 +376,16 @@ a:active
 
     box-shadow: 0 3px 16px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
     text-shadow: none;
+}
+
+/**
+* Image rebox minimum width
+*/
+img.rebox-content {
+  min-width: 45%;
+}
+img.rebox-content {
+  max-height: 90%;
 }
 
 /**
